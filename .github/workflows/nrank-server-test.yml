@@ -1,0 +1,12 @@
+name: Hourly cron job
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test corn
+        run: |
+          curl --request POST \
+          --url 'http://172.30.1.9/3333/api/hello'
