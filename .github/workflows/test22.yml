@@ -17,4 +17,4 @@ jobs:
       - name: test corn
         run: |
           curl --request POST \
-          --url 'http://172.30.1.9:3333/api/hello'
+          --url 'https://nrankweb.vercel.app/api/user/626911d1c1ee1d99fa4f7d71'
